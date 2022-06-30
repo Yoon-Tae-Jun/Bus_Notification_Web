@@ -1,10 +1,14 @@
-import React from "react";
+import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Tab, Tabs} from 'react-bootstrap';
 
 import Accordion from "../accordion/accordion";
+import GetTimes from "../CALL_API/call_timetable";
+
 
 function navbar(){
+
+
     const arrival_times = [
         {
             id: 1,
