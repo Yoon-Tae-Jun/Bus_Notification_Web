@@ -5,6 +5,7 @@ function rendertime({isGo, times}){
     return(
         times.SearchSTNTimeTableByIDService.row.map(time => {
             return (
+                
                 <Accordion.Item eventKey= {String(time.id)}>
                     <Accordion.Header>
                     #{time.id} {time.SUBWAYENAME}행 {time.LEFTTIME} 
