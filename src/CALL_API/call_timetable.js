@@ -6,3 +6,4 @@ const GetTimes = async() =>{
     }
 
 export default GetTimes;
+
