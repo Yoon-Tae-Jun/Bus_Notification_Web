@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Bus_Notification_Web/static/css/main.f0d685eb.css",
-    "main.js": "/Bus_Notification_Web/static/js/main.d5c22f6c.js",
+    "main.js": "/Bus_Notification_Web/static/js/main.d41488bf.js",
     "index.html": "/Bus_Notification_Web/index.html",
     "main.f0d685eb.css.map": "/Bus_Notification_Web/static/css/main.f0d685eb.css.map",
-    "main.d5c22f6c.js.map": "/Bus_Notification_Web/static/js/main.d5c22f6c.js.map"
+    "main.d41488bf.js.map": "/Bus_Notification_Web/static/js/main.d41488bf.js.map"
   },
   "entrypoints": [
     "static/css/main.f0d685eb.css",
-    "static/js/main.d5c22f6c.js"
+    "static/js/main.d41488bf.js"
   ]
 }
