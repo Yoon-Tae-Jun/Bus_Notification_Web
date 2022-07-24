@@ -1,13 +1,14 @@
 import React from "react";
 import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap';
-import Menu_Tab from "./navbar/Tab";
+import Menu_Tab from "./Tabs/Tab";
 
 function App() {
+  
 
   return (
     
      <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" cla fixed="top">
         <Container>
           <Navbar.Brand href="#home">SCH BUS</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
