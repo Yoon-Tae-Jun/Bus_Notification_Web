@@ -1,8 +1,6 @@
 import {IoMdSubway} from "react-icons/io"
 import styles from './layout.module.css'
 
-
-
 function Accordion_header({time, destination, current_stn, arrive_time, departure}){
 
     return(

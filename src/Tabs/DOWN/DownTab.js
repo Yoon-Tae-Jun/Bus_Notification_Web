@@ -11,7 +11,7 @@ function DownTab(){
     };
 
   useEffect(() => {
-        getArriveTime(3,2);
+        getArriveTime(1,2);
     },[]);
 
   
@@ -31,10 +31,11 @@ function getDate(){
   let year = today.getFullYear();
   let month = today.getMonth() + 1;  // 월
   let date = today.getDate();  // 날짜
+  let day = today.getDay();
   let hours = today.getHours(); // 시
   let minutes = today.getMinutes();  // 분
   let seconds = today.getSeconds();  // 초
-  let result = year + '/' + month + '/' + date + ' ' + hours + ':' + minutes + ':' + seconds
+  let result = year + '/' + month + '/' + date + ' ' + hours + ':' + minutes + ':' + seconds + " "+day
   return result
 }
 export default DownTab;

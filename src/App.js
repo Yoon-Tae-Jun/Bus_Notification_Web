@@ -3,14 +3,16 @@ import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap';
 import Menu_Tab from "./Tabs/Tab";
 
 function App() {
-  
+  const refreshPage = ()=>{
+    window.location.reload();
+  }
 
   return (
     
      <div>
       <Navbar bg="light" expand="lg" cla fixed="top">
         <Container>
-          <Navbar.Brand href="#home">SCH BUS</Navbar.Brand>
+          <Navbar.Brand href="#home" onClick={refreshPage}>SCH BUS</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
