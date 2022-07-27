@@ -1,14 +1,13 @@
 import {IoMdSubway} from "react-icons/io"
 import styles from './layout.module.css'
 
-function Accordion_header({time, destination, current_stn, arrive_time, departure}){
+function Accordion_header({bus_time, time, destination, current_stn, arrive_time, departure}){
 
     return(
         <div className={styles.container}>
-            <div><IoMdSubway size="40" color="#555"/></div>
-            {console.log(current_stn)}
+            <div> {bus_time === null ? <IoMdSubway size="40" color="#ff0033"/> : <IoMdSubway size="40" color="#33ff66"/>}</div>
             <div>
-                {departure}역 ➞ {destination}역
+                {departure}역 ➞ {destination}역 
                 <div className={styles.expect_time}>{time} 도착 예정 </div>
                 
             </div>

@@ -6,14 +6,14 @@ function UpTab(){
     const [arrive_time, setArriveTime] = useState([]);
 
 
-    async function getArriveTime(weekend, updown){
-      const response = await fetch(`http://192.168.123.101:5001/subway/${weekend}/${updown}`);
+    async function getArriveTime(updown){
+      const response = await fetch(`http://192.168.2.3:8080/subway/${updown}`);
         const json = await response.json();
         setArriveTime(json.data)
     };
 
   useEffect(() => {
-        getArriveTime(1,1);
+        getArriveTime(2);
     },[]);
 
   
