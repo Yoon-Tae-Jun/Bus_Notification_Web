@@ -5,7 +5,7 @@ function Accordion_header({bus_time, time, destination, current_stn, arrive_time
 
     return(
         <div className={styles.container}>
-            <div> {bus_time === null ? <IoMdSubway size="40" color="#ff0033"/> : <IoMdSubway size="40" color="#33ff66"/>}</div>
+            <div> {bus_time === null ? <IoMdSubway size="40" color="#ff0033"/> : <IoMdSubway size="40" color="#33ee66"/>}</div>
             <div>
                 {departure}역 ➞ {destination}역 
                 <div className={styles.expect_time}>{time} 도착 예정 </div>

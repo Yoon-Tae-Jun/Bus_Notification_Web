@@ -8,10 +8,11 @@ function Accordion_content({times}){
             return (
                 <Accordion.Item eventKey= {time.sbw_ID}>
                     <Accordion.Header >
+                        {console.log(time.sbw_ID)}
                      <Accordion_header bus_time = {time.bus_TIME} destination = {time.destination} departure = {time.departure} time = {time.train_TIME} current_stn = {time.current_STN} arrive_time = {time.arrive_TIME}/>
                     </Accordion.Header>
                     <Accordion.Body>
-                      <Accordion_body bus_time = {time.bus_TIME} cycle = {time.cycle} term = {time.term}/>
+                      <Accordion_body bus_time = {time.bus_TIME} cycle = {time.cycle} term = {time.term} arrive_time  ={time.arrive_TIME}/>
                     </Accordion.Body>
                 </Accordion.Item>
             )
