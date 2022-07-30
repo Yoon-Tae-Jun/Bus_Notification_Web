@@ -6,8 +6,11 @@
     height: 100%;
 }
 
+.station{
+    font-size: 4vmin;
+}
 .expect_time{
-    font-size: 12px;
+    font-size: 3.1vmin;
     margin-top: 1%;
 }
 
@@ -19,7 +22,7 @@
 
 .current_time{
     text-align: right;
-    font-size: 12px;
+    font-size: 3.1vmin;
     color: red;
     margin-top: 1%;
 }
