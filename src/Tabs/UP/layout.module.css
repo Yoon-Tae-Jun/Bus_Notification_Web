@@ -3,3 +3,11 @@
     display: flex;
     align-content: center;
 }
+
+.station{
+    font-size: 4vmin;
+}
+.expect_time{
+    font-size: 3.1vmin;
+    margin-top: 1%;
+}
