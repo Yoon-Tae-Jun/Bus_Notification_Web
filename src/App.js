@@ -1,6 +1,6 @@
-import React from "react";
 import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap';
 import Menu_Tab from "./Tabs/Tab";
+import Time_Table from "./TimeTable/Table";
 
 function App() {
   const refreshPage = ()=>{

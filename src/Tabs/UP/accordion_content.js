@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Accordion}  from 'react-bootstrap';
 import Accordion_header from './accordion_header';
+
+
 function Accordion_content({times}){
     return(
         times.map((time, index) => {
