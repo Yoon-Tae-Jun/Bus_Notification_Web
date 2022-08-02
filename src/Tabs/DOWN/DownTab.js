@@ -4,7 +4,7 @@ import {Accordion}  from 'react-bootstrap';
 import AccordionContent from './accordion_content';
 function DownTab(){
     const [arrive_time, setArriveTime] = useState([]);
-    const IP = "192.168.35.104"
+    const IP = "192.168.2.3"
     
     async function getArriveTime(updown){
       const response = await fetch("http://" + IP + `:8080/subway/${updown}`);
