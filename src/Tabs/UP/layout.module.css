@@ -2,6 +2,7 @@
 .container{
     display: flex;
     align-content: center;
+    font-family: "ONEMobileTitle";
 }
 
 .station{

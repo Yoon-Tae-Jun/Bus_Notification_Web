@@ -1,0 +1,28 @@
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "ONEMobileTitle";
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    font-size: 50px;
+}
+
+.icon{
+    margin: 0 auto;
+}
+
+.head{
+    margin: 0 auto;
+    font-size: 35px;
+}
+.content{
+    margin: 0 auto;
+    font-size: 20px;
+}

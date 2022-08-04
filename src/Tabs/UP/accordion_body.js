@@ -4,7 +4,7 @@ import {GrPowerCycle} from "react-icons/gr"
 function Accordion_body({bus_time, cycle, term, arrive_time }){
     const date = new Date();
     return(
-        <div >
+        <div style={{fontFamily: "ONEMobileRegular"}}>
             <div> <FaBusAlt/> : { 
                 Bus(bus_time, term, arrive_time, date)
             }
@@ -26,13 +26,15 @@ function Bus(bus_time, term, arrive_time, date){
 
 function ConvertCycleToStr(cycle){
     switch(cycle){
+        case null:
+            return "";
         case '1':
             return "동문 ➞ 학내순환 ➞ 신창역";
         case '2':
             return "X";
         case '3':
             return "알수없음";
-        default:
+        default :
             return "ERROR";
     }
 }

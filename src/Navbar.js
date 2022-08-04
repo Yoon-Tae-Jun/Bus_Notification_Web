@@ -1,4 +1,6 @@
 import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap';
+import {FaBusAlt} from "react-icons/fa"
+import styles from './layout.module.css'
 
 function Header(){
     const refreshPage = ()=>{
@@ -6,8 +8,8 @@ function Header(){
       }
     return(
     <Navbar bg="light" expand="lg" cla fixed="top">
-    <Container>
-      <Navbar.Brand href="#" onClick={refreshPage}>SCH BUS</Navbar.Brand>
+    <Container className={styles.container}>
+      <Navbar.Brand href="#" onClick={refreshPage}><FaBusAlt color='#a6ce39'/> <span className ={styles.titlesch}>SCH</span><span className={styles.titlebus}>BUS</span></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">

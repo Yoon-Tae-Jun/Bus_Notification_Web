@@ -33,6 +33,8 @@ function Bus(bus_time, term, arrive_time, date){
 
 function ConvertCycleToStr(cycle){
     switch(cycle){
+        case null:
+            return "";
         case '1':
             return "신창역 ➞ 학내순환 ➞ 신창역";
         case '2':
