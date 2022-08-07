@@ -12,3 +12,8 @@
     font-size: 3.1vmin;
     margin-top: 1%;
 }
+
+.body_container{
+    display: flex;
+    justify-content: space-between;
+}

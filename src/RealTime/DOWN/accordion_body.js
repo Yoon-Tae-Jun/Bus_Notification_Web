@@ -1,15 +1,28 @@
 import {FaBusAlt} from "react-icons/fa"
 import {GrPowerCycle} from "react-icons/gr"
-
-function Accordion_body({bus_time, cycle, term, arrive_time }){
+import styles from './layout.module.css'
+import BookMark from "./downBookMark";
+function Accordion_body({bus_time, cycle, term, arrive_time, sbw_id, bookmark }){
     const date = new Date();
     return(
-        <div >
-            <div> <FaBusAlt/> : { 
-                Bus(bus_time, term, arrive_time, date)
-            }
-             </div>
-            <div><GrPowerCycle/> : {ConvertCycleToStr(cycle)}</div>
+        <div  style={{fontFamily: "ONEMobileRegular"}}>
+            <div className={styles.body_container}>
+                <div> 
+                    <FaBusAlt/> : { 
+                    Bus(bus_time, term, arrive_time, date)
+                    }
+                </div>
+                <div>
+                    <BookMark 
+                        sbw_id = {sbw_id} 
+                        bookmark = {bookmark}/>
+                </div>
+            </div>
+
+            <div>
+                <GrPowerCycle/> : 
+                {ConvertCycleToStr(cycle)}
+            </div>
         </div>
          
           )

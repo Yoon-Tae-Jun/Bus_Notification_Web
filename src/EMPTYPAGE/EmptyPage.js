@@ -1,4 +1,4 @@
-import styles from './layout.module.css'
+import styles from './Empty.module.css'
 import {AiOutlineWarning} from "react-icons/ai"
 
 function EmptyPage(){

@@ -1,6 +1,7 @@
-import MenuTab from "./Tabs/Tab";
+import MenuTab from "./RealTime/Tab";
 import TimeTable from "./TimeTable/Table";
-import EmptyPage from "./EMPTYPAGE/EmptyPage";
+import EmptyPage from "./EmptyPage/EmptyPage";
+import BookMark from "./BookMark/Tab";
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Header from "./Navbar"
 import styles from "./App.css"
@@ -13,8 +14,11 @@ function App() {
      <div className={styles.container}>
       <Header/>
       <Routes>
-          <Route path="/home" element={<MenuTab/>} />
-          <Route path="/time" element={<EmptyPage/>} />
+          <Route path="/" element={<EmptyPage/>} />
+          <Route path="/realtime" element={<MenuTab/>} />
+          <Route path="/timetable" element={<EmptyPage/>} />
+          <Route path="/bookmark" element={<BookMark/>}/>
+          <Route path="/notice" element={<EmptyPage/>}/>
         </Routes>
      </div>
      </BrowserRouter>

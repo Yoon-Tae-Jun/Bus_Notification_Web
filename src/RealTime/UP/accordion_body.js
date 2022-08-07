@@ -1,15 +1,28 @@
 import {FaBusAlt} from "react-icons/fa"
 import {GrPowerCycle} from "react-icons/gr"
+import styles from './layout.module.css'
+import BookMark from "./downBookMark";
 
-function Accordion_body({bus_time, cycle, term, arrive_time }){
-    const date = new Date();
+function Accordion_body({bus_time, cycle, term, arrive_time, sbw_id, bookmark }){
     return(
         <div style={{fontFamily: "ONEMobileRegular"}}>
-            <div> <FaBusAlt/> : { 
-                Bus(bus_time, term, arrive_time, date)
-            }
-             </div>
-            <div><GrPowerCycle/> : {ConvertCycleToStr(cycle)}</div>
+            <div className={styles.body_container}> 
+                <div>
+                    <FaBusAlt/> : { 
+                        Bus(bus_time, term)
+                    }
+                </div>
+                <div>
+                <BookMark 
+                    sbw_id = {sbw_id} 
+                    bookmark = {bookmark}/>
+                </div>
+            </div>
+            
+            <div>
+                <GrPowerCycle/> : 
+                    {ConvertCycleToStr(cycle)}
+            </div>
         </div>
          
           )
@@ -17,7 +30,7 @@ function Accordion_body({bus_time, cycle, term, arrive_time }){
  
 }
 
-function Bus(bus_time, term, arrive_time, date){
+function Bus(bus_time, term){
     //버스 시간 없을 때
     if (bus_time === null) return "없음";
     //도착 시간 없을 때
