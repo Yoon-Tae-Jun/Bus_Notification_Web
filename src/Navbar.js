@@ -13,8 +13,8 @@ function Header(){
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
+        <Nav.Link href="/">홈</Nav.Link>
         <NavDropdown title="셔틀버스" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/">빠른 시간 찾기</NavDropdown.Item>
             <NavDropdown.Item href="realtime">실시간 셔틀버스</NavDropdown.Item>
             <NavDropdown.Item href="timetable">셔틀버스 시간표</NavDropdown.Item>
             <NavDropdown.Item href="bookmark">즐겨찾기</NavDropdown.Item>

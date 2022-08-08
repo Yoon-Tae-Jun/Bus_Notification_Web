@@ -5,7 +5,7 @@ import AccordionContent from './bookmark_up_content';
 function UpTab(){
     const [arrive_time, setArriveTime] = useState([]);
     const [book_mark, setBookMark] = useState({});
-    const IP = "192.168.35.104"
+    const IP = "192.168.2.3"
 
     async function getArriveTime(updown){
       const response = await fetch("http://" + IP + `:8080/subway/${updown}`);
