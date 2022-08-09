@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/Bus_Notification_Web/static/css/main.f0d685eb.css",
-    "main.js": "/Bus_Notification_Web/static/js/main.d41488bf.js",
+    "main.css": "/Bus_Notification_Web/static/css/main.09c1ef16.css",
+    "main.js": "/Bus_Notification_Web/static/js/main.a62b3cc3.js",
+    "static/media/ONE Mobile Regular.ttf": "/Bus_Notification_Web/static/media/ONE Mobile Regular.368ea49b83c3b73250d7.ttf",
+    "static/media/ONE Mobile Title.ttf": "/Bus_Notification_Web/static/media/ONE Mobile Title.9320691773364abbffb2.ttf",
+    "static/media/Timetable.jpg": "/Bus_Notification_Web/static/media/Timetable.ee05b5494d4a589a2af1.jpg",
     "index.html": "/Bus_Notification_Web/index.html",
-    "main.f0d685eb.css.map": "/Bus_Notification_Web/static/css/main.f0d685eb.css.map",
-    "main.d41488bf.js.map": "/Bus_Notification_Web/static/js/main.d41488bf.js.map"
+    "main.09c1ef16.css.map": "/Bus_Notification_Web/static/css/main.09c1ef16.css.map",
+    "main.a62b3cc3.js.map": "/Bus_Notification_Web/static/js/main.a62b3cc3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0d685eb.css",
-    "static/js/main.d41488bf.js"
+    "static/css/main.09c1ef16.css",
+    "static/js/main.a62b3cc3.js"
   ]
 }
