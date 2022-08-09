@@ -7,7 +7,7 @@ function Home(){
     const [down_time, setDownTime] = useState([]);
     const [up_time, setUpTime] = useState([]);
     const [nowtime, setNowTime] = useState(getTime());
-    const IP = "192.168.2.3"
+    const IP = "43.200.27.101"
 
     async function getDownTime(){
         const response = await fetch("http://" + IP + `:8080/subway/running`);

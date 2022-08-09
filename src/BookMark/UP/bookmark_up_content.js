@@ -3,7 +3,7 @@ import {Accordion}  from 'react-bootstrap';
 import AccordionHeader from './bookmark_up_header';
 import AccordionBody from './bookmark_up_body';
 import { useEffect } from 'react';
-import EmptyBookmark from '../../EMPTYPAGE/EmptyBookmark';
+import EmptyBookmark from '../../EmptyPage/EmptyBookmark';
 
 function Accordion_content({times, bookmark, setBookMark}){
     let allcounter = 0;

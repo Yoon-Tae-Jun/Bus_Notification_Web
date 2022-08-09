@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from "./HOME/Home"
 import MenuTab from "./RealTime/Tab";
 import TimeTable from "./TimeTable/Table";
-import EmptyPage from "./EMPTYPAGE/EmptyPage";
+import EmptyPage from "./EmptyPage/EmptyPage";
 import BookMark from "./BookMark/Tab";
 import Header from "./Navbar"
 import styles from "./App.css"

@@ -3,7 +3,7 @@ import {Tab, Tabs} from 'react-bootstrap';
 
 import DownTab from './DOWN/DownTab';
 import UpTab from './UP/UPTab';
-import EmptyPage from '../EMPTYPAGE/EmptyPage';
+import EmptyPage from '../EmptyPage/EmptyPage';
 
 function Menu_Tab(){
 
