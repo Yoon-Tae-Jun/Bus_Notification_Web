@@ -12,7 +12,7 @@ function App() {
  
 
   return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename = "/Bus_Notification_Web">
      <div className={styles.container}>
       <Header/>
       <Routes>
