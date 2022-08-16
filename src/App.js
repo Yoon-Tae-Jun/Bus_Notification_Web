@@ -12,7 +12,7 @@ function App() {
  
 
   return (
-      <BrowserRouter basename = "/Bus_Notification_Web">
+      <BrowserRouter >
      <div className={styles.container}>
       <Header/>
       <Routes>
