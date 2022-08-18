@@ -1,23 +1,129 @@
 .homeContainer{
     padding-Top: 60px;
     font-family: 'ONEMobileTitle';
+    display: flex;
+    flex-direction: column;
 }
 
-.downtitle{
-    margin-left: 3%;
-    margin-top: 3%;
-    font-size: 6vmin;
+/* 하교 */
+.upContainer{
+    margin-top: 1.7vh;
+    margin-left: 4vw;
+    width: 92vw;
+    background: #007681;
+    border: 1px solid #aaaaaa;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
 }
 
-.uptitle{
-    margin-left: 3%;
-    margin-top: 5%;
-    font-size: 6vmin;
+.UpHeader{
+    color: #FFFFFF;
+    font-size: 4.7vmin;
+    padding-left: 1vh;
+}
+.upBodyContainer{
+    display: flex;
+    flex-direction: column;
+    height: 17.3vh;
+    background: #FFFFFF;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #AAAAAA;
+    border-radius: 0px 0px 7px 7px;
+
 }
 
-.time{
+.UpReload{
+    margin-left: auto;
+    margin-right: 1vmin;
+}
+
+.UpStationContainer{
+    display: flex;
+    margin-left: 2vmin;
+}
+
+/* 버스 있을 때 버스 시간 */
+.upBodyHeader{
     text-align: center;
-    font-size: 6vmin;
-    margin-top: 3%;
-    border-bottom: solid 1px #eeeeee;
+}
+
+.UpBusText{
+    font-size: 3.5vmin;
+}
+
+.UpCycleText{
+    font-size: 2.5vmin;
+}
+/* -------------------------------- */
+
+/* 버스 없을 때 */
+.UpNoBus{
+    font-size: 4.8vmin;
+    margin-left: 2vmin;
+}
+
+
+/* 노선도 디자인 */
+.UpArrow{
+    margin-left: 4.8vw;
+    margin-top: 3vmin;
+}
+
+.line{
+    width: 100%;
+    border: 3px solid #1B3C9B;
+}
+/* -------------------------------- */
+
+/* 역명 */
+.UpStationName{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-size: 3.5vmin;
+}
+
+/* 도착 시간 */
+.UpArrivedTime{
+    margin-left: 2vmin;
+    font-size: 2.5vmin;
+}
+
+/* -------------------------------- */
+/* -------------------------------- */
+
+
+
+/* 등교 */
+
+.DownArrow{
+    margin-left: 16.8vw;
+    margin-top: 3vmin;
+}
+/* 역명 */
+.DownStationName{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 3.5vmin;
+}
+
+/* 도착시간 박스 */
+.DownArriveTimeBox{
+    display: flex;
+    
+}
+
+.DownArriveTime{
+    font-size: 2.5vmin;
+    margin-left: 1vmin;
+    color: #FF0000;
+}
+
+.DownArriveBusTime{
+
+    font-size: 2.5vmin;
 }
