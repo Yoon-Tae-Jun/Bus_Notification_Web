@@ -7,3 +7,12 @@
 .container{
     font-family: "ONEMobileTitle";
 }
+
+.refresh{
+    border: 1px solid #DFE0E1;
+    border-radius: 3px;
+}
+
+.pd{
+    color: #F8F9FA;
+}

@@ -22,6 +22,7 @@ function App() {
           <Route path="/bookmark" element={<BookMark/>}/>
           <Route path="/notice" element={<EmptyPage/>}/>
         </Routes>
+        
      </div>
      </BrowserRouter>
     );

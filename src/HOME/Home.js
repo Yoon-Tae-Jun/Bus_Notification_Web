@@ -2,11 +2,15 @@ import { useState, useEffect } from "react";
 import styles from "./Home.module.css";
 import Up from "./UP";
 import Down from "./DOWN";
+import BookMark from "./BookMark/BookMark";
+import { Link } from "react-router-dom";
 function Home(){
     const [times, setTimes] = useState([]);
     const [UpTime, setUpTime] = useState([]);
     const [DownTime, setDownTime] = useState([]);
-    const IP = "192.168.2.3"
+    const [AdsImage, setAdsImage] = useState("");
+    const IP = "43.200.27.101"
+
 
 
 
@@ -14,22 +18,54 @@ function Home(){
         const response = await fetch("http://" + IP + `:8080/subway/all`);
           const json = await response.json();
           setTimes(json.data);
-          setUpTime(GetUpTime(json.data));
-          setDownTime(GetDownTime(json.data));
+          setUpTime((UpTime) => {
+            return UpTime = GetUpTime(json.data)
+          });
+          setDownTime((DownTime) =>{
+            return DownTime = GetDownTime(json.data)
+          });
+          
         };
 
-      
+    async function getAds(){
+        const response = await fetch("http://" + IP + `:8080/Ads`);
+            const json = await response.json();
+            setAdsImage((AdsImage) => {
+            return AdsImage =json.data.img_LINK;
+            });
+            
+        };  
     useEffect(() => {
         getTimes();
+        getAds();
+        /* 에드핏 광고 */
+        // let ins = document.createElement('ins');
+        // let scr = document.createElement('script');
+        // ins.className = 'kakao_ad_area';
+        // ins.style = "display:none; width:100%;,";
+        // scr.async = 'true';
+        // scr.type = "text/javascript";
+        // scr.src = "//t1.daumcdn.net/kas/static/ba.min.js";
+        // ins.setAttribute('data-ad-width','320');
+        // ins.setAttribute('data-ad-height','100');
+        // ins.setAttribute('data-ad-unit','DAN-AwhVZ26kDl35LA7Q');
+        // document.querySelector('.adfit').appendChild(ins);
+        // document.querySelector('.adfit').appendChild(scr);
     },[]);
 
     return(
         <div className={styles.homeContainer}>
+            
             <Down time = {DownTime}/>
             <Up time = {UpTime}/>
-            <div>즐겨찾기</div>
-       
-            
+            <BookMark/>
+            <div className={styles.ads}>
+
+                <a target="_blank" href="https://velog.velcdn.com/images/xmstlf0903/post/363d8913-7b68-44c7-a736-c01cc0e85e0b/image.jpg"> <img className={styles.img} alt="ads" src={AdsImage} /></a>
+                {/* 에드핏 광고 */}
+                {/* <div className="adfit"></div> */}
+            </div>
+            <div className={styles.pd}/>
         </div>
     )
 }
@@ -64,6 +100,7 @@ function GetUpTime(times) {
         }
 
     }
+    return null;
 
 
 }
@@ -75,7 +112,7 @@ function GetDownTime(times) {
             return time;
         }
     }
-
+    return null;
 
 }
 

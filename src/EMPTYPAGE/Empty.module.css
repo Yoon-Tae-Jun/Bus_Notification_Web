@@ -36,3 +36,36 @@
     margin: 0 auto;
     font-size: 15px;
 }
+
+
+.HomeContainer{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    font-family: "ONEMobileTitle";
+}
+
+.HomebookmarkHead{
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.HomebookmarkContent{
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.Homeitem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.Homehead{
+    margin: 0 auto;
+    font-size: 28px;
+}
+.Homecontent{
+    margin: 0 auto;
+    font-size: 15px;
+}
