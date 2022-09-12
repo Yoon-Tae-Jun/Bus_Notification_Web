@@ -27,9 +27,9 @@ function Down({time}){
                 {/* 노선도 디자일 */}
                 {
                     time === null ?
-                    <IoMdArrowDropleftCircle className={styles.DownArrow} size = "20" color="#FFFFFF"/>
+                    <IoMdArrowDropleftCircle className={styles.DownArrow} size = "2.5vh" color="#FFFFFF"/>
                     :
-                    <IoMdArrowDropleftCircle className={styles.DownArrow} size = "20" color="#1B3C9B"/>
+                    <IoMdArrowDropleftCircle className={styles.DownArrow} size = "2.5vh" color="#1B3C9B"/>
                     }
                 
                 <div className={styles.line}/>
@@ -66,7 +66,7 @@ function ConvertCycleToStr(cycle){
         case null:
             return "";
         case '1':
-            return "동문 ➞ 학내순환 ➞ 신창역";
+            return "신창역 ➞ 학내순환 ➞ 신창역";
         case '2':
             return "신창역 ➞ 후문";
         case '3':

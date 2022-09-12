@@ -14,7 +14,7 @@ function Header(){
     <Navbar bg="light" expand="lg" cla fixed="top">
     <Container className={styles.container}>
       <Navbar.Brand href="#" onClick={GoMainPage}><FaBusAlt color='#a6ce39'/> <span className ={styles.titlesch}>SCH</span><span className={styles.titlebus}>BUS</span></Navbar.Brand>
-      <div className={styles.pd}>aaaaasaaaaa</div>
+      <div className={styles.pd}>sch bus info</div>
       <div onClick={refreshPage} className={styles.refresh}><IoMdRefresh size="36" color="#707071"/></div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

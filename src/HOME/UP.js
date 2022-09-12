@@ -23,13 +23,13 @@ function Up({time}){
                         </div>
                     </div>
                     }
-
+                    {console.log(time)}
                     {/* 노선도 디자일 */}
                     {
                     time === null ?
-                    <IoMdArrowDroprightCircle className={styles.UpArrow} size = "20" color="#FFFFFF"/>
+                    <IoMdArrowDroprightCircle className={styles.UpArrow} size = "2.5vh" color="#FFFFFF"/>
                     :
-                    <IoMdArrowDroprightCircle className={styles.UpArrow} size = "20" color="#1B3C9B"/>
+                    <IoMdArrowDroprightCircle className={styles.UpArrow} size = "2.5vh" color="#1B3C9B"/>
                     }
                 <div className={styles.line}/>
                 
@@ -64,7 +64,7 @@ function ConvertCycleToStr(cycle){
         case null:
             return "";
         case '1':
-            return "동문 ➞ 학내순환 ➞ 신창역";
+            return "후문 ➞ 학내순환 ➞ 신창역";
         case '2':
             return "후문 ➞ 신창역";
         case '3':
