@@ -23,7 +23,6 @@ function Up({time}){
                         </div>
                     </div>
                     }
-                    {console.log(time)}
                     {/* 노선도 디자일 */}
                     {
                     time === null ?

@@ -5,7 +5,7 @@ import EmptyPage from '../../EmptyPage/HomeEmptyPage';
 import DownTab from './DOWN/DownTab';
 import UpTab from './UP/UPTab';
 
-function Menu_Tab(){
+function Menu_Tab({time}){
 
     return(
         <div className={styles.upContainer}>
@@ -17,11 +17,12 @@ function Menu_Tab(){
         transition={false}
         id="noanim-tab-example"
         >
+            {console.log()}
         <Tab eventKey="go" title="등교" >
-        <DownTab/>
+        <DownTab time = {GetDOWNTime(time)}/>
         </Tab>
         <Tab eventKey="back" title="하교">
-        <UpTab/>
+        <UpTab time = {GetUPTime(time)}/>
         </Tab>
         <Tab eventKey="circle" title="학내순환"><EmptyPage/></Tab>
             
@@ -29,6 +30,29 @@ function Menu_Tab(){
     </div>
     </div>
     )
+
+
 }
 
+function GetUPTime(times) {
+    return times.filter((time) =>{
+        if(time["updown"] === "1"){
+            return time
+        }
+    }
+    )
+
+
+}
+
+function GetDOWNTime(times) {
+    return times.filter(time =>{
+        if(time["updown"] === "2"){
+            return time
+        }
+    }
+    )
+
+
+}
 export default Menu_Tab;

@@ -16,6 +16,7 @@ function Home(){
     async function getTimes(){
         const response = await fetch("http://" + IP + `:8080/subway/all`);
           const json = await response.json();
+          
           setTimes(json.data);
           setUpTime((UpTime) => {
             return UpTime = GetUpTime(json.data)
@@ -57,9 +58,8 @@ function Home(){
             
             <Down time = {DownTime}/>
             <Up time = {UpTime}/>
-            <BookMark/>
+            <BookMark time = {times}/>
             <div className={styles.ads}>
-
                 <a target="_blank" rel="noopener noreferrer" href="https://velog.velcdn.com/images/xmstlf0903/post/363d8913-7b68-44c7-a736-c01cc0e85e0b/image.jpg"> <img className={styles.img} alt="ads" src={AdsImage} /></a>
                 {/* 에드핏 광고 */}
                 {/* <div className="adfit"></div> */}
