@@ -5,6 +5,7 @@ import MenuTab from "./RealTime/Tab";
 import TimeTable from "./TimeTable/Table";
 import EmptyPage from "./EmptyPage/EmptyPage";
 import BookMark from "./BookMark/Tab";
+import VersionPage from "./VersionPage/version";
 import Header from "./Navbar"
 import styles from "./App.css"
 
@@ -20,7 +21,7 @@ function App() {
           <Route path="/realtime" element={<MenuTab/>} />
           <Route path="/timetable" element={<TimeTable/>} />
           <Route path="/bookmark" element={<BookMark/>}/>
-          <Route path="/notice" element={<EmptyPage/>}/>
+          <Route path="/notice" element={<VersionPage/>}/>
         </Routes>
         
      </div>
