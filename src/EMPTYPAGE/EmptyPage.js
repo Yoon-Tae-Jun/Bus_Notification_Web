@@ -1,6 +1,7 @@
 import styles from './Empty.module.css'
 import {AiOutlineWarning} from "react-icons/ai"
 
+// 빈화면
 function EmptyPage(){
     return(
          <div className= {styles.container}>

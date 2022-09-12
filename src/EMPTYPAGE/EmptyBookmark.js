@@ -1,6 +1,7 @@
 import styles from './Empty.module.css'
 import {AiOutlineWarning} from "react-icons/ai"
 
+// 즐겨찾기 빈화면
 function EmptyBookmark(){
     return(
          <div className= {styles.container}>
